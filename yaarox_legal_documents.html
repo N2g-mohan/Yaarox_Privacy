@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yaarox Privacy Policy, Terms and Conditions, and Community Guidelines.">
+<title>Yaarox — Legal & Community</title>
+<style>
+:root{--bg:#f5f6fb;--surface:#fff;--ink:#182033;--muted:#657087;--line:#e5e8f0;--brand:#6546e8;--brand2:#8b5cf6;--soft:#f0edff;--shadow:0 14px 40px rgba(31,35,65,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:radial-gradient(circle at 85% 15%,rgba(255,255,255,.22),transparent 28%),linear-gradient(130deg,#39218f,#6546e8 55%,#9465ef);color:#fff;padding:56px 22px 42px}
+.hero-inner,.layout{max-width:1120px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:800;opacity:.8}
+.hero h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.08;margin:12px 0}
+.hero p{max-width:680px;color:rgba(255,255,255,.86);margin:0;font-size:1.06rem}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.action{border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:10px 17px;color:#fff;background:rgba(255,255,255,.12);font-weight:700;cursor:pointer}
+.action:hover{background:rgba(255,255,255,.22)}
+.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;padding:28px 22px 70px;align-items:start}
+.sidebar{position:sticky;top:18px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}
+.sidebar h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:4px 8px 12px}
+.navbtn{display:flex;width:100%;text-align:left;border:0;background:transparent;padding:12px;border-radius:11px;color:var(--muted);font:inherit;font-weight:700;cursor:pointer;gap:10px;align-items:center}
+.navbtn span{width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:#f0f1f7;color:#606a80;font-size:.8rem}
+.navbtn.active{background:var(--soft);color:var(--brand)}
+.navbtn.active span{background:var(--brand);color:#fff}
+.sidebar-note{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);margin:14px 6px 2px;padding:14px 4px 0}
+.content{min-width:0}
+.doc{display:none;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:clamp(22px,4vw,48px);box-shadow:var(--shadow)}
+.doc.active{display:block}
+.doc-kicker{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:.75rem}
+.doc h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;margin:8px 0 10px;letter-spacing:-.035em}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:28px}
+.notice{background:#fff8e8;border:1px solid #f4dfad;color:#72521b;border-radius:12px;padding:14px 16px;margin:20px 0 28px;font-size:.92rem}
+.doc h3{font-size:1.15rem;margin:30px 0 8px;line-height:1.35}
+.doc p{margin:8px 0 14px}
+.doc ul,.doc ol{padding-left:23px;margin:8px 0 16px}
+.doc li{padding-left:4px;margin:5px 0}
+.doc hr{border:0;border-top:1px solid var(--line);margin:30px 0}
+.doc strong{color:#202944}
+.contact{background:#f7f7fc;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:24px}
+.footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 20px 35px}
+@media(max-width:780px){.layout{grid-template-columns:1fr;padding:18px 14px 45px}.sidebar{position:static;display:flex;flex-wrap:wrap;gap:5px}.sidebar h2,.sidebar-note{width:100%}.navbtn{width:auto;flex:1 1 145px}.hero{padding:42px 18px 34px}}
+@media print{body{background:#fff}.hero{background:#fff;color:#111;padding:20px 0}.hero p{color:#444}.hero-actions,.sidebar,.footer{display:none!important}.layout{display:block;padding:0}.doc{display:block!important;box-shadow:none;border:0;border-radius:0;padding:12px 0;page-break-after:always}.doc:last-child{page-break-after:auto}.notice{background:#fff}.doc h2{font-size:24pt}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Yaarox · Legal & Community</div>
+    <h1>Built for connection.<br>Guided by respect.</h1>
+    <p>Our policies explain how Yaarox handles information, what users agree to, and the standards that help keep our community safe.</p>
+    <div class="hero-actions">
+      <button class="action" onclick="window.print()">Print / Save as PDF</button>
+      <button class="action" onclick="showDoc('privacy')">Read Privacy Policy</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" aria-label="Legal document navigation">
+    <h2>Documents</h2>
+    <button class="navbtn active" data-doc="privacy" onclick="showDoc('privacy')"><span>01</span> Privacy Policy</button>
+    <button class="navbtn" data-doc="terms" onclick="showDoc('terms')"><span>02</span> Terms & Conditions</button>
+    <button class="navbtn" data-doc="community" onclick="showDoc('community')"><span>03</span> Community Guidelines</button>
+    <div class="sidebar-note">Please read these documents carefully. Replace all bracketed placeholders before publishing.</div>
+  </aside>
+
+  <main class="content">
+    <article class="doc active" id="privacy">
+      <div class="doc-kicker">Document 01</div>
+      <h2>Privacy Policy</h2>
+      <div class="meta">Effective Date: [Insert Date] &nbsp;·&nbsp; Last Updated: [Insert Date]</div>
+      <div class="notice"><strong>Draft notice:</strong> This is a working policy draft. Confirm the actual data flows, retention periods, age safeguards, service providers and user-rights processes before publishing.</div>
+
+      <h3>1. Introduction</h3>
+      <p>Welcome to Yaarox. Yaarox is a social media platform that allows users to create and share posts, short videos (Reels), communicate through private messaging, participate in community challenges and interact with other users.</p>
+      <p>This Privacy Policy explains how Yaarox collects, uses, stores, processes, protects and shares personal information when users access our mobile application or website. By using Yaarox, you acknowledge that you have read this Privacy Policy.</p>
+
+      <h3>2. Information We Collect</h3>
+      <p><strong>A. Account information</strong></p>
+      <ul><li>Username and email address.</li><li>Password, stored in hashed form rather than plain text.</li><li>Google account authentication identifiers and authentication-provider information.</li><li>Account and login status.</li></ul>
+      <p><strong>B. Profile information</strong></p>
+      <ul><li>Profile name, username, profile picture and biography.</li><li>Other information voluntarily added to a profile.</li><li>Information submitted with a verification request.</li></ul>
+      <p><strong>C. User-generated content</strong></p>
+      <ul><li>Posts, photographs, videos, Reels and captions.</li><li>Comments and other interactions.</li><li>Content visibility preferences, shared content and saved content.</li></ul>
+      <p><strong>D. Messages and attachments</strong></p>
+      <ul><li>Chat messages and images, videos or audio attachments shared through chat.</li><li>Message identifiers and conversation-related information.</li></ul>
+      <p><strong>E. Activity information</strong></p>
+      <ul><li>Likes, comments, shares, saves and follower relationships.</li><li>Post and Reel views, view duration and engagement analytics.</li><li>Notifications and challenge participation.</li></ul>
+      <p><strong>F. Technical and security information</strong></p>
+      <p>We may process technical information such as IP addresses, authentication and session information, request information and administrative security logs where necessary for platform security, rate limiting, fraud prevention and system administration.</p>
+
+      <h3>3. How We Use Your Information</h3>
+      <ol><li>Creating and managing user accounts.</li><li>Providing login and authentication services, including Google Sign-In and account linking.</li><li>Displaying profiles and uploaded content.</li><li>Delivering posts and Reels according to visibility settings.</li><li>Enabling private messaging and media sharing.</li><li>Managing notifications and user interactions.</li><li>Providing verification services and engagement analytics.</li><li>Detecting spam, suspicious activity and unauthorized access.</li><li>Reviewing reported content and enforcing Community Guidelines.</li><li>Maintaining platform performance, reliability and security.</li><li>Complying with applicable legal obligations.</li></ol>
+
+      <h3>4. Content Visibility and Privacy Controls</h3>
+      <ul><li><strong>Public:</strong> Content may be viewed by users according to platform functionality.</li><li><strong>Followers:</strong> Content is restricted to eligible followers or users included in the applicable Close Friends settings.</li><li><strong>Private:</strong> Content is restricted according to the platform's private-content access controls.</li></ul>
+      <p>Users are responsible for selecting appropriate visibility settings before publishing. Changing visibility settings may not remove copies that other users have already downloaded, captured or independently shared.</p>
+
+      <h3>5. Google Sign-In and Authentication</h3>
+      <p>Yaarox supports manual email/username authentication and Google Sign-In. When users authenticate through Google, we process verified authentication information required to establish or access their accounts. If a Google account matches an existing manually registered account, Yaarox may request explicit user confirmation before linking the accounts. We do not automatically link accounts without the required confirmation.</p>
+
+      <h3>6. Chat and Private Communications</h3>
+      <p>Messages and attachments are processed to deliver messages to intended participants, maintain conversation history, manage unread counts, prevent duplicate message processing, enforce participant access permissions, investigate reported abuse or comply with lawful requests.</p>
+      <p>Private messaging should not be assumed to have end-to-end encryption unless Yaarox explicitly introduces and verifies that functionality.</p>
+
+      <h3>7. Data Storage and Third-Party Services</h3>
+      <p>Yaarox uses its own backend infrastructure, including Node.js, Express.js and MongoDB. Media may be stored using local server storage or supported cloud storage infrastructure. Third-party infrastructure and authentication providers may process relevant information when their services are enabled. These may include Google Authentication, Cloudinary when cloud storage is activated, Redis infrastructure when connected, and hosting or infrastructure providers.</p>
+      <p>We aim to ensure that third-party service providers process information only for authorized operational purposes and subject to appropriate safeguards.</p>
+
+      <h3>8. Data Security</h3>
+      <p>Yaarox implements security measures designed to protect user information, including JWT-based authentication, bcrypt password hashing, role-based access control, request rate limiting, input validation and sanitization, protected media access, and administrative audit logging. No internet-based service can guarantee absolute security. Users should protect their account credentials and avoid sharing passwords.</p>
+
+      <h3>9. Data Sharing and Disclosure</h3>
+      <p>Yaarox does not intend to sell personal information to third parties. Information may be disclosed in limited circumstances:</p>
+      <ol><li>To service providers supporting platform operations.</li><li>When required by applicable laws or valid legal orders.</li><li>To investigate security incidents, fraud or platform abuse.</li><li>To protect users, platform integrity and legal rights.</li><li>With user authorization or consent where applicable.</li></ol>
+
+      <h3>10. Data Retention</h3>
+      <p>Yaarox retains information for as long as necessary to provide services, maintain platform security, resolve disputes and satisfy applicable legal requirements. When an account is deleted, associated information will be deleted or anonymized according to applicable retention requirements. Certain information may need to be retained for legally prescribed periods, including information required for investigations or regulatory compliance.</p>
+
+      <h3>11. User Privacy Rights</h3>
+      <p>Subject to applicable laws, users may have the right to request access to their personal information, request correction of inaccurate information, request deletion, withdraw consent where processing is based on consent, raise privacy-related complaints and exercise other applicable data protection rights. Users may contact Yaarox through the official privacy contact below.</p>
+
+      <h3>12. Children's Privacy</h3>
+      <p>Yaarox recognizes the importance of protecting children's personal information. The platform will apply appropriate age-related safeguards and parental consent requirements wherever applicable under Indian law. Yaarox must not knowingly process children's personal data in violation of applicable legal requirements. The minimum permitted age and age-verification arrangements must be published in accordance with implemented safeguards and applicable law.</p>
+
+      <h3>13. Changes to This Privacy Policy</h3>
+      <p>Yaarox may update this Privacy Policy when platform features, security practices or legal requirements change. Users will be informed of material changes through appropriate platform notifications or other communication methods.</p>
+
+      <div class="contact"><h3>14. Contact Information</h3><p><strong>Privacy Contact:</strong> [Insert Email]<br><strong>Grievance Officer:</strong> [Insert Name]<br><strong>Official Address:</strong> [Insert Registered Business Address]<br><strong>Website:</strong> [Insert Website URL]</p></div>
+    </article>
+
+    <article class="doc" id="terms">
+      <div class="doc-kicker">Document 02</div>
+      <h2>Terms &amp; Conditions</h2>
+      <div class="meta">Effective Date: [Insert Date] &nbsp;·&nbsp; Last Updated: [Insert Date]</div>
+      <div class="notice"><strong>Draft notice:</strong> Complete the business identity, contact and jurisdiction details, and have the final terms reviewed for the actual launch model.</div>
+
+      <h3>1. Acceptance of Terms</h3>
+      <p>Welcome to Yaarox. These Terms &amp; Conditions govern your access to and use of the Yaarox mobile application, website and related services. By creating an account or using Yaarox, you agree to comply with these Terms, our Privacy Policy and Community Guidelines. If you do not agree, you must discontinue using the platform.</p>
+
+      <h3>2. About Yaarox</h3>
+      <p>Yaarox is a social networking platform that provides user profiles and account management, posts and short-form video content, likes, comments, shares and saves, private messaging and media attachments, notifications, community challenges, user verification badges, and content reporting and moderation. Yaarox may introduce, modify, suspend or discontinue features as the platform develops.</p>
+
+      <h3>3. Account Registration</h3>
+      <p>Users must provide accurate and valid registration information. Users agree to:</p>
+      <ol><li>Maintain the confidentiality of their login credentials.</li><li>Provide accurate account information.</li><li>Avoid creating fraudulent or impersonating accounts.</li><li>Notify Yaarox if they suspect unauthorized account access.</li><li>Avoid sharing or transferring accounts without authorization.</li><li>Follow applicable age and consent requirements.</li></ol>
+      <p>Yaarox may restrict accounts created using misleading or fraudulent information.</p>
+
+      <h3>4. Authentication and Account Linking</h3>
+      <p>Yaarox supports manual authentication and Google Sign-In. Users may link supported authentication providers to an existing account through the platform's authorized linking process. Account linking requires the necessary user confirmation and authentication verification. Users are responsible for maintaining access to their registered authentication methods.</p>
+
+      <h3>5. User Content and Ownership</h3>
+      <p>Users retain ownership of content they create and upload, subject to applicable intellectual property laws. By uploading content to Yaarox, users grant Yaarox a non-exclusive, worldwide, royalty-free license to host, store, process, reproduce, display and distribute that content solely as reasonably necessary to operate, provide, secure and improve platform services.</p>
+      <p>This license is subject to the user's selected visibility settings and ends when the content is deleted, except where continued processing or retention is necessary for legal, security, backup or legitimate operational purposes. Users represent that they have the necessary rights and permissions to upload and share their content.</p>
+
+      <h3>6. User Responsibilities</h3>
+      <p>Users agree not to:</p>
+      <ul><li>Violate applicable laws.</li><li>Upload content that infringes another person's rights.</li><li>Harass, threaten or abuse other users.</li><li>Impersonate individuals or organizations.</li><li>Upload malicious software or harmful files.</li><li>Attempt unauthorized access to other accounts.</li><li>Manipulate likes, views, followers or engagement.</li><li>Spam users or distribute misleading content.</li><li>Circumvent platform security or moderation systems.</li><li>Misuse verification badges or platform features.</li></ul>
+
+      <h3>7. Posts, Reels and Media Sharing</h3>
+      <p>Users may publish content using available publishing and visibility features. Users are responsible for reviewing their content and visibility settings before publication. Yaarox reserves the right to remove or restrict content that violates these Terms, Community Guidelines or applicable laws.</p>
+
+      <h3>8. Private Messaging</h3>
+      <p>Users must not use messaging services for spam or unsolicited abusive communication, threats or harassment, fraudulent activities, unauthorized distribution of private information, or sharing unlawful or prohibited content. Access to messaging functionality may be restricted in response to violations or security concerns.</p>
+
+      <h3>9. Verification Badges</h3>
+      <p>Yaarox may provide a verification badge to eligible accounts. Verification requests may be assigned one of the following statuses: None, Pending, Approved or Rejected. Submitting a request does not guarantee approval. Users must not falsely represent themselves as verified or misuse verification indicators. Yaarox may revoke verification status when eligibility requirements are no longer satisfied or misuse is identified.</p>
+
+      <h3>10. Community Challenges</h3>
+      <p>Yaarox may provide challenges that encourage community participation and content creation. Users must participate responsibly and follow all applicable laws and Community Guidelines. Yaarox may remove challenges or related content that creates safety risks or violates platform policies.</p>
+
+      <h3>11. Reporting and Moderation</h3>
+      <p>Users may report content or behavior that violates platform policies. Yaarox may investigate reports and take appropriate action, including removing content, restricting account functionality, issuing warnings, temporarily suspending accounts or permanently terminating accounts. Moderation will be handled according to platform policies and applicable legal requirements.</p>
+
+      <h3>12. Account Suspension and Termination</h3>
+      <p>Yaarox reserves the right to suspend, restrict or terminate accounts that repeatedly violate platform policies, engage in fraudulent activities, attempt unauthorized access, abuse other users, upload unlawful content, or threaten platform security or integrity. Where appropriate, users may be provided an opportunity to appeal moderation decisions.</p>
+
+      <h3>13. Intellectual Property</h3>
+      <p>Yaarox's name, branding, logos, design elements, software and proprietary platform components are protected by applicable intellectual property laws. Users must not copy, reproduce, distribute or commercially exploit Yaarox's proprietary materials without authorization.</p>
+
+      <h3>14. Third-Party Services</h3>
+      <p>Yaarox may integrate third-party services such as authentication, media storage and infrastructure providers. Such services may be governed by their own terms and privacy policies. Yaarox is not responsible for independent third-party services beyond its control, subject to applicable law.</p>
+
+      <h3>15. Service Availability</h3>
+      <p>Yaarox aims to maintain reliable services but does not guarantee uninterrupted availability. Services may be temporarily unavailable due to maintenance, security updates, technical failures, infrastructure problems, network interruptions or events beyond reasonable control.</p>
+
+      <h3>16. Limitation of Liability</h3>
+      <p>To the extent permitted by applicable law, Yaarox will not be responsible for indirect or consequential losses arising from unauthorized user activities, third-party conduct or temporary service interruptions. Nothing in these Terms excludes liability that cannot legally be excluded or limited.</p>
+
+      <h3>17. Privacy</h3>
+      <p>Your use of Yaarox is also governed by the Yaarox Privacy Policy. Users should review it to understand how their personal information is processed and protected.</p>
+
+      <h3>18. Changes to These Terms</h3>
+      <p>Yaarox may update these Terms when necessary. Material changes will be communicated through appropriate platform notifications or other available communication methods. Continued use after applicable changes take effect constitutes acceptance of the updated terms, to the extent permitted by law.</p>
+
+      <h3>19. Governing Law and Jurisdiction</h3>
+      <p>These Terms shall be governed by the laws of India. Disputes shall be subject to the jurisdiction of the competent courts in [Insert City and State], India, subject to applicable consumer protection and other mandatory legal provisions.</p>
+
+      <div class="contact"><h3>20. Contact Information</h3><p><strong>Support Email:</strong> [Insert Email]<br><strong>Official Address:</strong> [Insert Registered Address]<br><strong>Website:</strong> [Insert Website URL]</p></div>
+    </article>
+
+    <article class="doc" id="community">
+      <div class="doc-kicker">Document 03</div>
+      <h2>Community Guidelines</h2>
+      <div class="meta">Effective Date: [Insert Date] &nbsp;·&nbsp; Last Updated: [Insert Date]</div>
+      <div class="notice"><strong>Our promise:</strong> These guidelines set expectations for respectful participation across Yaarox. Enforcement should follow a consistent, documented moderation process.</div>
+
+      <h3>1. Our Community Mission</h3>
+      <p>Welcome to the Yaarox community. Yaarox aims to create a safe, respectful and positive environment where people can express themselves, share creativity, communicate and build meaningful connections. Every user plays an important role in maintaining a healthy community.</p>
+      <p>These Guidelines apply to user profiles, posts and Reels, comments and interactions, private messages, media attachments, community challenges and other platform features.</p>
+
+      <h3>2. Respect Everyone</h3>
+      <p>Every user deserves respect. We do not allow bullying or targeted harassment, threats or intimidation, hate speech or discriminatory abuse, repeated unwanted contact, public humiliation or targeted attacks, or encouragement of violence against individuals or groups. Users should communicate respectfully, even when opinions differ.</p>
+
+      <h3>3. No Harmful or Illegal Content</h3>
+      <p>Users must not upload, publish, share or distribute content that violates applicable laws. Prohibited content includes child sexual exploitation or abuse material, non-consensual intimate imagery, sexual exploitation or harassment, content promoting illegal activities, credible threats of violence, content exposing another person's private information without authorization, and material that facilitates fraud or criminal activity. Yaarox may remove such content and take appropriate action in accordance with applicable law.</p>
+
+      <h3>4. Protect User Privacy</h3>
+      <p>Respect the privacy of others. Users must not publish another person's private contact details without authorization, share private conversations publicly without appropriate permission, distribute personal photographs or videos without the necessary rights, attempt to expose another user's identity or private information, or misuse information obtained through private messaging. Respect the privacy settings selected by other users.</p>
+
+      <h3>5. Authenticity and Impersonation</h3>
+      <p>Yaarox encourages authentic interactions. Users must not impersonate another person, create fake identities to deceive others, misrepresent official organizations, use verification badges misleadingly, create accounts for fraudulent or deceptive purposes, or manipulate other users through fabricated identities. Accounts found engaging in impersonation may be restricted or suspended.</p>
+
+      <h3>6. Spam and Platform Manipulation</h3>
+      <p>Users must not send repeated unwanted messages, publish repetitive promotional content, use fake accounts to manipulate engagement, artificially inflate likes, comments, views or followers, exploit platform bugs for unfair advantages, distribute malicious links or files, or use automated methods to abuse platform functionality.</p>
+
+      <h3>7. Intellectual Property and Copyright</h3>
+      <p>Users must respect the intellectual property rights of others. Do not upload or distribute copyrighted material without appropriate authorization, unauthorized photographs or videos, content that infringes trademarks, stolen creative work, or other protected material without the necessary rights. Users are responsible for ensuring they have permission to share content.</p>
+
+      <h3>8. Safe and Responsible Challenges</h3>
+      <p>Yaarox supports positive and creative community challenges. All challenges and related submissions must be safe and lawful. We do not permit challenges that encourage dangerous physical activities, promote illegal behavior, encourage harassment or humiliation, put participants or bystanders at risk, or encourage harmful behavior toward other people. Yaarox may remove unsafe challenges and restrict accounts involved in organizing or promoting them.</p>
+
+      <h3>9. Responsible Communication</h3>
+      <p>Users should maintain respectful behavior in public comments and private chats. Abusive or threatening messages, persistent unwanted communication, scams or fraudulent requests, harassment through repeated messages, sharing prohibited material, and attempts to obtain another user's account credentials are not permitted. Users may block or report accounts that make them uncomfortable.</p>
+
+      <h3>10. Reporting Violations</h3>
+      <p>If you encounter content or behavior that violates these Guidelines, report it through the available reporting functionality. Reports may relate to inappropriate posts or Reels, abusive comments, harassing messages, fake or impersonating accounts, privacy violations or other prohibited behavior. Please provide accurate information when submitting a report. False, malicious or deliberately misleading reports may themselves result in moderation action.</p>
+
+      <h3>11. Moderation and Enforcement</h3>
+      <p>Yaarox may review reported content and take appropriate moderation action. Depending on the severity and frequency of violations, actions may include:</p>
+      <ul><li><strong>Level 1 — Warning:</strong> Notification of a policy violation and request to stop or correct the behavior.</li><li><strong>Level 2 — Content Restriction:</strong> Removal of violating posts, comments or media, or restriction of specific platform functionality.</li><li><strong>Level 3 — Temporary Suspension:</strong> Temporary restriction of account access or features.</li><li><strong>Level 4 — Permanent Account Suspension:</strong> Termination of accounts involved in serious or repeated violations.</li></ul>
+      <p>Serious violations may result in immediate restrictions without prior warnings. Moderation decisions will consider the nature of the violation, available evidence, applicable law and user safety.</p>
+
+      <h3>12. Appeals</h3>
+      <p>Users who believe that moderation action was taken incorrectly may submit an appeal through the official support or grievance mechanism. Appeals should include relevant account information, details of the moderation decision and a clear explanation of why the decision should be reviewed. Yaarox may review appeals and communicate its decision through available support channels.</p>
+
+      <h3>13. Our Commitment</h3>
+      <ul><li>Encouraging respectful interactions.</li><li>Protecting user privacy.</li><li>Maintaining a secure platform.</li><li>Addressing reported violations.</li><li>Supporting fair moderation.</li><li>Improving community safety.</li><li>Complying with applicable laws.</li></ul>
+
+      <div class="contact"><h3>14. Contact and Reporting</h3><p><strong>Support Email:</strong> [Insert Email]<br><strong>Grievance Officer:</strong> [Insert Name]<br><strong>Website:</strong> [Insert Website URL]</p></div>
+      <hr>
+      <p><strong>Be Respectful. Be Authentic. Stay Safe.</strong></p>
+      <p>Let's make Yaarox a positive place for everyone.<br><strong>The Yaarox Team</strong></p>
+    </article>
+  </main>
+</div>
+<footer class="footer">© <span id="year"></span> Yaarox. All rights reserved. &nbsp;·&nbsp; Replace bracketed placeholders before publishing.</footer>
+<script>
+function showDoc(id){
+  document.querySelectorAll('.doc').forEach(el=>el.classList.toggle('active',el.id===id));
+  document.querySelectorAll('.navbtn').forEach(el=>el.classList.toggle('active',el.dataset.doc===id));
+  if(history.replaceState) history.replaceState(null,'','#'+id);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+const initial=location.hash.replace('#','');
+if(['privacy','terms','community'].includes(initial)) showDoc(initial);
+</script>
+</body>
+</html>
